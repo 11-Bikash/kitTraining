@@ -1,0 +1,453 @@
+<html>
+	<head>
+		<title></title>
+		<style type="text/css">
+			#mainarea{
+				width:1200px;
+				height:3000px;
+				background:pink;
+				margin:0 auto;
+			}
+				#titlearea{
+					width:1200px;
+					height:20px;
+					background:green;
+				}
+			#logoarea{
+				width:1200px;
+				height:530px;
+				background:url('logo.jpeg') no-repeat;
+				background-size:1200px 530px;
+			}
+				#green{
+				width:1200px;
+				height:530px;
+				background:rgba(0,120,0,0.1);
+				}
+				#menuarea{
+					width:1200px;
+					height:30px;
+					
+				}
+
+						#menuarea ul{
+							list-style:none;
+							margin:0;
+							padding:0;
+						}
+						#menuarea ul li{
+							float:right;	
+						}
+						#menuarea ul li a:link, #menuarea ul li a:visited{
+							color:#FFF;
+							background:transparent;
+							text-decoration:none;
+							padding:6px 25px;
+							display:block;
+							/*border-right:solid 1px black;*/
+						
+						}
+						#menuarea ul li:last-child a:link, #menuarea ul li:last-child a:visited{
+							border-right:none;
+						}
+						#menuarea ul li a:hover{
+							color:yellow;
+							background:green;
+						}
+						#menuarea ul li ul{
+							display:none;
+						}
+						#menuarea ul li:hover ul{
+							display:block;
+							position:absolute;
+							z-index:10;
+						}
+						#menuarea ul li:hover ul li{
+							float:none;
+						}
+						#menuarea ul li:hover ul li a:link,#menuarea ul li:hover ul li a:visited{
+							border:none;
+							
+						}
+				#larea{
+					width:1200px;
+					height:500px;
+					
+				}
+				.center{
+					display:block;
+					margin-left:440px;
+					
+					width:27%;
+				}
+			#slidearea{
+				width:1200px;
+				height:350px;
+				background:url('1.png') no-repeat;
+				background-size:1200px 350px;
+			}
+			#exparea{
+				width:1200px;
+				height:200px;
+				background:yellow;
+				background-image:url('expp.jpg');
+				background-size:5% 20px;
+			}
+			#darea{
+				width:1200px;
+				height:620px;
+				background:url('bb.jpg') no-repeat;
+				background-size:1200px 620px;
+				
+			}
+				#d1area{
+					width:300px;
+					height:400px;
+					background:transparent;
+					background-size:300px 170px;
+					float:left;
+					margin:100px 50px;
+				}
+					#d11{
+						width:290px;
+						height:170px;
+						background:url('jsr.jpg') no-repeat;
+						background-size:290px 170px;		
+						/*border:ridge 9px green;
+						border-radius:0px 70px;
+						border-image-width:0px 70px;*/
+					}
+						#d11:hover{
+							border:solid 9px red;
+							/*border-radius:70px 0px;*/
+						}
+				#d2area{
+					width:300px;
+					height:400px;
+					background:transparent;
+					float:left;
+					margin:100px 50px;
+				}
+					#d21{
+						width:290px;
+						height:170px;
+						background:url('ranchi.jpg') no-repeat;
+						background-size:290px 170px;		
+						border:ridge 9px green;
+						border-radius:0px 70px;
+						border-image-width:0px 70px;
+					}
+						#d21:hover{
+							border:ridge 9px red;
+							border-radius:70px 0px;
+						}
+				#d3area{
+					width:300px;
+					height:400px;
+					background:transparent;
+					float:left;
+					margin:100px 50px;
+				}
+					#d31{
+						width:290px;
+						height:170px;
+						background:url('deoghar.jpg') no-repeat;
+						background-size:290px 170px;		
+						border:ridge 9px green;
+						border-radius:0px 70px;
+						border-image-width:0px 70px;
+					}
+						#d31:hover{
+							border:ridge 9px red;
+							border-radius:70px 0px;
+						}
+			#ddarea{
+				width:1200px;
+				height:620px;
+				background:url('bb.jpg') no-repeat;
+				background-size:1200px 620px;
+			}
+				#dd1area{
+					width:300px;
+					height:400px;
+					background:transparent;
+					float:left;
+					margin:100px 50px;	
+					margin-top:40;
+				}
+					#dd11{
+						width:290px;
+						height:170px;
+						background:url('dhanbad.png') no-repeat;
+						background-size:290px 170px;		
+						border:ridge 9px green;
+						border-radius:0px 70px;
+						border-image-width:0px 70px;
+					}
+						#dd11:hover{
+							border:ridge 9px red;
+							border-radius:70px 0px;
+						}
+				#dd2area{
+					width:300px;
+					height:400px;
+					background:transparent;
+					float:left;
+					margin:100px 50px;	
+					margin-top:40;
+				}
+					#dd21{
+						width:290px;
+						height:170px;
+						background:url('bokaro.jpg') no-repeat;
+						background-size:290px 170px;		
+						border:ridge 9px green;
+						border-radius:0px 70px;
+						border-image-width:0px 70px;
+					}
+						#dd21:hover{
+							border:ridge 9px red;
+							border-radius:70px 0px;
+						}
+				#dd3area{
+					width:300px;
+					height:400px;
+					background:transparent;
+					float:left;
+					margin:100px 50px;	
+					margin-top:40;
+				}
+					#dd31{
+						width:290px;
+						height:170px;
+						background:url('dumka.jpg') no-repeat;
+						background-size:290px 170px;		
+						border:ridge 9px green;
+						border-radius:0px 70px;
+						border-image-width:0px 70px;
+					}
+						#dd31:hover,#dd31 h2:hover{
+							border:ridge 9px red;
+							border-radius:70px 0px;
+							color:green;
+						}
+			#morearea{
+				width:1200px;
+				height:30px;
+				background:blue;
+				opacity:0.3;
+			}
+				#m1{
+					width:70px;
+					height:30px;
+					background:green;
+					margin:0 auto;
+				}
+			#aboutarea{
+				width:1200px;
+				height:400px;
+			}
+				#a1{
+					width:300px;
+					height:300px;
+					background:#4BB7F0  ;
+					float:left;
+					padding-top:100px;
+				}
+				#a2{
+					width:900px;
+					height:200px;
+					float:left;
+					background:url('a.jpg') no-repeat;
+					background-size:900px 400px;
+					padding-top:200px;
+				}
+			#footerarea{
+				width:1200px;
+				height:300px;
+				background:black;
+			}
+				#f1{
+					width:300px;
+					height:300px;
+					background:orange;
+					float:left;
+				}
+				#f2{
+					width:300px;
+					height:300px;
+					background:;
+					float:left;
+				}
+				#f3{
+					width:300px;
+					height:300px;
+					background:orange;
+					float:left;
+				}
+				#f4{
+					width:300px;
+					height:300px;
+					background:;
+					float:left;
+				}
+			#devarea{
+				width:1200px;
+				height:30px;
+				background:green;
+					
+			}
+				
+		</style>
+	</head>
+	<body>
+		<div id="mainarea">
+				<div id="titlearea">
+				</div>
+			
+			<div id="logoarea" >
+			<div id="black">
+				<div id="menuarea">
+					<ul style="font-weight:bold; ">
+						<li >
+							<a href="#" >CONTACT</a>
+						</li>
+						<li>
+							<a href="#">HOTELS</a>
+						</li>
+						<li>
+							<a href="#">ABOUT</a>
+						</li>
+						<li>
+							<a href="#">PLACES</a>
+							<ul>
+								<li>
+									<a href="#">JAMSHEDPUR</a>
+								</li>
+								<li>
+									<a href="#">RANCHI</a>
+								</li>
+								<li>
+									<a href="#">DEOGHAR</a>
+								</li>
+								<li>
+									<a href="#">DUMKA</a>
+								</li>
+								<li>
+									<a href="#">DHANBAD</a>
+								</li>
+								<li>
+									<a href="#">BOKARO</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">HOME</a>
+						</li>
+					</ul>
+				</div>
+				<div id="larea">
+					<img src="logo1.png" class="center" width="27%" height="270 px" />
+					<marquee direction="up" loop=1 behavior="alternate" scrollamount="17"><h1 align="center" style="color:#CCF; font-size:70px;">JHARKHAND</br>PLACE'S</h1>
+					</marquee>
+				</div>
+			</div>
+			</div>
+			<div id="slidearea">
+			</div>
+			<div id="exparea">
+				<marquee direction="down" behavior="scroll" scrollamount="17" height="300px"	>
+					<h1  align="center" style="color:#11EB; font-size:100px;">EXPLORE  NOW</h1>
+				</marquee>
+			</div>
+			<div id="darea">
+				<div id="d1area">
+					<div id="d11">	
+					</div>
+					<h2 align="center" style="background-color:rgba(255,0,0,0.5);">JAMSHEDPUR</h2>
+					<p align="center" style="background-color:rgba(0,255,0,0.3);">
+						<b>Jamshedpur is a large city set between the Subarnarekha and Kharkai rivers in the east Indian state of Jharkhand. It s known for huge, tree-lined Jubilee Park, where the Tata Steel Zoological Park has resident species including tigers and leopards. To the east, the hilltop Bhuvaneshwari Temple has an elaborate 5-story entrance tower. North of the city, elephants roam through the forests at Dalma Wildlife Sanctuary.</b>
+						<a href="jsr.html" target="_blank" ><img src="exp_r1.png" width="200px" height="80px"/></a>
+					</p>
+				</div>
+				<div id="d2area">
+					<div id="d21">	
+					</div>
+					<h2 align="center" style="background-color:rgba(255,0,0,0.5);">RANCHI</h2>
+					<p align="center" style="background-color:rgba(0,255,0,0.3);">
+						<b>Ranchi is the capital of the Indian state of Jharkhand. Ranchi was the centre of the Jharkhand movement, which called for a separate state for the tribal regions of South Bihar, northern Odisha, western West Bengal and the eastern area of what is present-day Chhattisgarh. The Jharkhand state was formed on 15 November 2000 by carving out the Bihar divisions of Chota Nagpur and Santhal Parganas.</b>
+						<a href="http://www.google.com" align="center" ><img src="exp_r1.png" width="200px" height="80px"/></a>
+					</p>
+				</div>
+				<div id="d3area">
+					<div id="d31">	
+					</div>
+					<h2 align="center" style="background-color:rgba(255,0,0,0.5);">DEOGHAR</h2>
+					<p align="center" style="background-color:rgba(0,255,0,0.3);">
+						<b>Deoghar is a holy city beside the Mayurakshi River, in the east Indian state of Jharkhand. The ancient Baba Baidyanath Temple complex is a significant Hindu pilgrimage site. Nearby, Shiv Ganga is a sacred pool where devotees of Shiva bathe. There is a shrine to Krishna in the ornate, stone-carved Naulakha Mandir temple. Northeast of town, Harila Jori is the site of a whitewashed Shiva temple..</b>
+						<a href="http://www.google.com" align="center" ><img src="exp_r1.png" width="200px" height="80px"/></a>
+					</p>
+				</div>
+			</div>
+			<div id="ddarea">
+				<div id="dd1area">
+					<div id="dd11">	
+					</div>
+					<h2 align="center" style="background-color:rgba(255,0,0,0.5);">DHANBAD</h2>
+					<p align="center" style="background-color:rgba(0,255,0,0.3);">
+						<b>Dhanbad, a major city in the Indian state of Jharkhand and sometimes referred to as  The Coal Capital of India , is an important centre for the manufacturing industry. Dhanbad is one of the fastest developing cities in the world and it is well-known for its large number of colliery units and important industrial companies. Dhanbad is home to several prominent businesses and it is largely thanks to these corporations that the city has grown and modernised so quickly. Above all, Dhanbad's cultural heritage is almost as impressive as its economic hub status.</b>
+						<a href="http://www.google.com" align="center" ><img src="exp_r1.png" width="200px" height="80px"/></a>
+					</p>
+				</div>
+				<div id="dd2area">
+					<div id="dd21">	
+					</div>
+					<h2 align="center" style="background-color:rgba(255,0,0,0.5);">BOKARO</h2>
+					<p align="center" style="background-color:rgba(0,255,0,0.3);">
+						<b>Bokaro, officially known as Bokaro Steel City , is a large and planned city in Jharkhand, India. It is the fourth most populous city in the state and one of the first planned cities of India.Bokaro is the administrative headquarters of Bokaro district.The city is located on the banks of Garga River and on the fringes of Bokaro river and is surrounded by hill ranges at Giridih and Ramgarh districts.It is one of the most peaceful cities in India.As per 2011 census, the city's population was 563,417 and 1,100,000 of its metropolitan area. The city span across 183 km in geographic area.</b>
+						<a href="http://www.google.com" align="center" ><img src="exp_r1.png" width="200px" height="80px"/></a>
+					</p>
+				</div>
+				<div id="dd3area">
+					<div id="dd31">	
+					</div>
+					<h2 align="center" style="background-color:rgba(255,0,0,0.5); color:red;">DUMKA</h2>
+					<p align="center" style="background-color:rgba(0,255,0,0.3);">
+						<b>Dumka, the headquarters of the Dumka district and Santhal Pargana region, is a city in the state of Jharkhand, India. It was made the headquarters of the Santhal Pargana region, which was carved out of the Bhagalpur and Birbhum district after the Santal Hool of 1855.Dumka was carved out of the southern part of Bihar along with 18 other Districts on 15 November 2000 to form Jharkhand as 28th State of India. Dumka is a peaceful and green city and also sub-capital of Jharkhand. The nearest important cities are Rampurhat .Luxury night bus service between Dumka - Ranchi..</b>
+						<a href="http://www.google.com" ><img src="exp_r1.png" width="200px" height="80px"/></a>
+					</p>
+				</div>
+			</div>
+			<div id="morearea">
+				<div id="m1">
+					MORE
+				</div>
+			</div>
+			<div id="aboutarea">
+				<div id="a1">
+					<p align="center" style="font-size:50px; color:#FFF;" >
+						<b>ABOUT </br> US</b>
+					</p>
+				</div>
+				<div id="a2">
+					<p align="center" style="font-size:30px; color:black; background-color:rgba(0,200,0,0.3);" >
+						<b>Life is a grand adventure, and every place you visit becomes a chapter in your book of experiences. Embrace the thrill of discovering new cultures, cuisines, and landscapes. Let your wanderlust guide you towards a life filled with joy and entertainment.</br> <u style="color:yellow";>"#Explore #FindYourBliss"</u></b>
+					</p>
+				</div>
+			</div>
+			<div id="footerarea">
+				<div id="f1">
+				</div>
+				<div id="f2">
+				</div>
+				<div id="f3">
+				</div>
+				<div id="f4">
+				</div>
+			</div>
+			<div id="devarea">
+			</div>
+			
+		</div>	
+	</body>
+</html>
