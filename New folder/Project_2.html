@@ -1,0 +1,368 @@
+<html>
+	<head>
+		<title>PROJECT 2</title>
+		<style type="text/css">
+			body{
+				margin:0;
+			}
+			#mainarea{
+				width:80%;
+				height:2390px;	
+				background:#FFF;
+				margin:0 auto;
+			}
+			#titlearea{
+				width:100%;
+				height:20px;	
+				background:black;
+			}
+			#logoarea{
+				width:100%;
+				height:450px;
+				/*background-color:rgba(255,0,0,0.5);*/
+				background-image:url('logo.jpeg');
+				background-repeat:no-repeat;
+				background-size:100% 450px;
+				opacity:0.9;	
+			}
+				#l1{
+					width:30%;
+					height:450px;
+					background:transparent;
+					float:left;
+				}
+				#l2{
+					width:40%;
+					height:450px;
+					background:transparent;	
+					float:left;
+					z-index:100;
+				}
+				.center{
+					display:block;
+					margin-left:auto;
+					margin-right:auto;
+					width:60%;
+				}
+				#l3{
+					width:30%;
+					height:450px;
+					background:transparent;	
+					float:left;	
+				}
+			#menuarea{
+				width:100%;
+				height:30px;	
+				background:black;
+			}
+						#menuarea ul{
+							list-style:none;
+							margin:0;
+							padding:0;
+						}
+						#menuarea ul li{
+							float:left;
+								
+						}
+						#menuarea ul li a:link, #menuarea ul li a:visited{
+							color:green;
+							background:transparent;
+							text-decoration:none;
+							padding:6px 25px;
+							display:block;
+							/*border-right:solid 1px black;*/
+						
+						}
+						#menuarea ul li:last-child a:link, #menuarea ul li:last-child a:visited{
+							border-right:none;
+						}
+						#menuarea ul li a:hover{
+							color:yellow;
+							background:green;
+						}
+						#menuarea ul li ul{
+							display:none;
+						}
+						#menuarea ul li:hover ul{
+							display:block;
+							position:absolute;
+							z-index:10;
+						}
+						#menuarea ul li:hover ul li{
+							float:none;
+						}
+						#menuarea ul li:hover ul li a:link,#menuarea ul li:hover ul li a:visited{
+							border:none;
+							
+						}
+			#slidearea{
+				width:100%;
+				height:400px;	
+				background:pink;
+				background-image:url('slide.jpg');
+				background-size:100% 400px;
+
+			}
+			#aboutarea{
+				width:100%;
+				height:200px;	
+				background:#FFF;
+				background-image:url('expp.jpg');
+				background-size:5% 20px;
+				
+			}
+			#jharea{
+				width:100%;
+				height:300px;	
+				background:pink;
+				background-image:url('jh.png');
+				background-size:100% 300px;
+			}
+			#r1area{
+				width:100%;
+				height:220px;	
+				background:#9DE29B;
+			}
+				#r11{
+					width:19%;
+					height:215px;
+					background:url('jsr.jpg') no-repeat;
+					background-size: 100% 215px;	
+					float:left;	
+					border:ridge 9px red;
+					border-radius:0px 80px;
+					border-image-width:0px 80px;
+				}
+				#r12{
+					width:60%;
+					height:200px;
+					background:transparent;	
+					float:left;	
+				}
+				#r13{
+					width:19%;
+					height:200px;
+					background:transparent;	
+					float:left;	
+					
+				}
+			#r2area{
+				width:100%;
+				height:220px;	
+				background:#96F365;
+			}
+				#r21{
+					width:19%;
+					height:200px;
+					background:red;
+					float:left;
+				}
+				#r22{
+					width:60%;
+					height:200px;
+					background:transparent;	
+					float:left;	
+				}
+				#r23{
+					width:19%;
+					height:215px;
+					background:url('ranchi.jpg') no-repeat;
+					background-size: 100% 215px;	
+					float:left;	
+					border:ridge 9px green;
+					border-radius:0px 80px;
+					border-image-width:0px 80px;
+				}
+			#r3area{
+				width:100%;
+				height:220px;	
+				background:#58E380;
+			}
+				#r31{
+					width:19%;
+					height:215px;
+					background:url('deoghar.jpg') no-repeat;
+					background-size: 100% 215px;	
+					float:left;	
+					border:ridge 9px green;
+					border-radius:0px 80px;
+					border-image-width:0px 80px;
+				}
+				#r32{
+					width:60%;
+					height:200px;
+					background:transparent;	
+					float:left;	
+				}
+				#r33{
+					width:19%;
+					height:200px;
+					background:transparent;	
+					float:left;	
+				}
+			#r4area{
+				width:100%;
+				height:220px;	
+				background:#90E68D;
+			}
+				#r41{
+					width:19%;
+					height:200px;
+					background:red;
+					float:left;
+				}
+				#r42{
+					width:60%;
+					height:200px;
+					background:transparent;	
+					float:left;	
+				}
+				#r43{
+					width:19%;
+					height:215px;
+					background:url('dumka.jpg') no-repeat;
+					background-size: 100% 215px;	
+					float:left;	
+					border:ridge 9px green;
+					border-radius:0px 80px;
+					border-image-width:0px 80px;
+				}
+			#footerarea{
+				width:100%;
+				height:100px;	
+				background:black;
+			}
+			#darea{
+				width:100%;
+				height:30px;	
+				background:brown;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="mainarea">
+			<div id="titlearea">
+				<p>&#9904;</p>
+			</div>
+			<div id="logoarea">
+				<div id="l1">
+										
+				</div>
+				<div id="l2">
+					<img src="logo1.png" class="center" width="85%" height="290px" />
+					
+					<h1 align="center"  style="font-family:geneva; font-size:50px; color:#DC7633;" >JHARKHAND</br>PLACE'S</h1>
+					
+				</div>
+				<div id="l3">
+										
+				</div>
+			</div>
+			<div id="menuarea">
+					<ul>
+						<li>
+							<a href="#">HOME</a>
+						</li>
+						<li>
+							<a href="#">PLACES</a>
+							<ul>
+								<li>
+									<a href="#">Place 1</a>
+								</li>
+								<li>
+									<a href="#">Place 2</a>
+								</li>
+								<li>
+									<a href="#">Place 3</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">ABOUT</a>
+						</li>
+						<li>
+							<a href="#">GALLERY</a>
+						</li>
+						<li>
+							<a href="#">CONTACT</a>
+						</li>
+					</ul>
+			</div>
+			<div id="slidearea">
+			</div>
+			<div id="aboutarea">
+				
+					<font color="#165C1D" size="17px" ><b><marquee direction="down" scrollamount="10"  behavior="alternate" height="200px"><p  align="center" >	EXPLORE
+									NOW</marquee></b></font>
+
+				</p>
+			</div>
+			<div id="jharea">
+			</div><hr width="1px">
+			<div id="r1area">
+				<div id="r11">
+										
+				</div>
+				<div id="r12">
+					<p align="center"><b><font color="red"><u>JAMSHEDPUR</u></font></b></p>
+					<p align="center">
+						<b><font size="3px">Jamshedpur is a large city set between the Subarnarekha and Kharkai rivers in the east Indian state of Jharkhand. It s known for huge, tree-lined Jubilee Park, where the Tata Steel Zoological Park has resident species including tigers and leopards. To the east, the hilltop Bhuvaneshwari Temple has an elaborate 5-story entrance tower. North of the city, elephants roam through the forests at Dalma Wildlife Sanctuary.</b>
+						</font></br><a href="jsr.html" target="_blank"><img src="exp_r1.png" width="200px" height="80px"/></a>
+					</p>
+				</div>
+				<div id="r13">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d117711.79652222908!2d86.09336808086626!3d22.784165520001277!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f5e31989f0e2b5%3A0xeeec8e81ce9b344!2sJamshedpur%2C%20Jharkhand!5e0!3m2!1sen!2sin!4v1700213533184!5m2!1sen!2sin" width="100%" height="220px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" ></iframe>
+				</div>
+			</div><hr width="1px">
+			<div id="r2area">
+				<div id="r21">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d234447.1555087755!2d85.15651031149748!3d23.343433819339744!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f4e104aa5db7dd%3A0xdc09d49d6899f43e!2sRanchi%2C%20Jharkhand!5e0!3m2!1sen!2sin!4v1700219125485!5m2!1sen!2sin" width="100%" height="220px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>					
+				</div>
+				<div id="r22">
+					<p align="center"><b><font color="red"><u>RANCHI</u></font></b></p>
+					<p align="center">
+						<b><font size="3px">Ranchi is the capital of the Indian state of Jharkhand. Ranchi was the centre of the Jharkhand movement, which called for a separate state for the tribal regions of South Bihar, northern Odisha, western West Bengal and the eastern area of what is present-day Chhattisgarh</b>
+						</font></br><a href="http://www.google.com"><img src="exp_r1.png" width="200px" height="80px"/></a>
+					</p>
+				</div>
+				<div id="r23">
+					
+				</div>
+			</div><hr width="1px">
+			<div id="r3area">
+				<div id="r31">
+										
+				</div>
+				<div id="r32">
+					<p align="center"><b><font color="red"><u>DEOGHAR</u></font></b></p>
+					<p align="center">
+						<b><font size="3px">Deoghar is a holy city beside the Mayurakshi River, in the east Indian state of Jharkhand. The ancient Baba Baidyanath Temple complex is a significant Hindu pilgrimage site. Nearby, Shiv Ganga is a sacred pool where devotees of Shiva bathe. There is a shrine to Krishna in the ornate, stone-carved Naulakha Mandir temple. Northeast of town, Harila Jori is the site of a whitewashed Shiva temple and a sacred water tank.</b>
+						</font></br><a href="http://www.google.com"><img src="exp_r1.png" width="200px" height="80px"/></a>
+					</p>
+				</div>
+				<div id="r33">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d116202.45760920669!2d86.61780434204455!3d24.474131254403588!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f116280f130f01%3A0xed8ba5a38d873e4b!2sDeoghar%2C%20Jharkhand!5e0!3m2!1sen!2sin!4v1700218730736!5m2!1sen!2sin" width="100%" height="220px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+				</div>
+			</div><hr width="1px">
+			<div id="r4area">
+				<div id="r41">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d116384.92572552865!2d87.17444853462203!3d24.27572008505966!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f0b7b4985d6179%3A0x9c3a3b726f103305!2sDumka%2C%20Jharkhand!5e0!3m2!1sen!2sin!4v1700218961055!5m2!1sen!2sin" width="100%" height="220px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>					
+				</div>
+				<div id="r42">
+					<p align="center"><b><font color="red"><u>DUMKA</u></font></b></p>
+					<p align="center">
+						<b><font size="3px">Dumka, the headquarters of the Dumka district and Santhal Pargana region, is a city in the state of Jharkhand, India. It was made the headquarters of the Santhal Pargana region, which was carved out of the Bhagalpur and Birbhum district after the Santal Hool of 1855. </b>
+						</font></br><a href="http://www.google.com"><img src="exp_r1.png" width="200px" height="80px"/></a>
+					</p>
+				</div>
+				<div id="r43">
+					
+				</div>
+			</div><hr width="1px">
+			<div id="footerarea">
+			</div>
+			<div id="darea">
+			</div>
+		</div>
+	</body>
+</html>
