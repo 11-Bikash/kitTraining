@@ -2,6 +2,12 @@
 	<head>
 		<title></title>
 		<style type="text/css">
+			body{
+				margin:0;
+			}
+			h1,p{
+				margin:0;
+			}
 			#mainarea{
 				width:1200px;
 				height:3000px;
@@ -13,23 +19,15 @@
 					height:20px;
 					background:green;
 				}
-			#logoarea{
-				width:1200px;
-				height:650px;
-				background:url('logo8.jpg') no-repeat;
-				background-size:1200px 650px;
-			}
-				#green{
-				width:1200px;
-				height:530px;
-				background:rgba(0,120,0,0.1);
-				}
 				#menuarea{
 					width:1200px;
-					height:30px;	
-					
+					height:45px;	
+					position:sticky;
+					top:0;	
+					z-index:10000;
+						padding-top:5px;		
+						padding-bottom:5px;
 				}
-
 						#menuarea ul{
 							list-style:none;
 							margin:0;
@@ -46,7 +44,8 @@
 							color:#FFF;
 							background:transparent;
 							text-decoration:none;
-							padding:6px 25px;
+						
+							padding:8px 25px;
 							display:block;
 							/*border-right:solid 1px black;*/
 						
@@ -71,12 +70,16 @@
 						}
 						#menuarea ul li:hover ul li a:link,#menuarea ul li:hover ul li a:visited{
 							border:none;
-							
 						}
+			#logoarea{
+				width:1200px;
+				height:650px;
+				background:url('logo8.jpg') no-repeat;
+				background-size:1200px 650px;
+			}
 				#larea{
 					width:1200px;
-					height:500px;
-					
+					height:600px;
 				}
 				#larea h1{
 					text-shadow:-5px -5px 5px #FFC;
@@ -90,11 +93,46 @@
 					padding-top:350px;
 					color:green;
 				}
+			@keyframes slide{
+				0%{
+					transform:translate(0,0) no-repeat;
+					background:url('a.jpg');
+					background-size:1200px 550px;
+				}
+				20%{
+					transform:taransate(0,0) no-repeat;
+					background:url('b.jpg');
+					background-size:1200px 550px;
+				}
+				40%{
+					transform:transalte(0,0) no-repeat;
+					background:url('1.png');
+					background-size:1200px 550px;
+				}
+				60%{
+					tarnsform:translate(0,0) no-repeat;
+					background:url('bb.jpg');
+					background-size:1200px 550px;
+				}
+				80%{
+					transform:translate(0,0) no-repeat;
+					background:url('a.jpg');
+					background-size:1200px 550px;
+				}
+				100%{
+					transfrom:translate(0,0) no-repeat;
+					background:url('1.png');
+					background-size:1200px 550px;
+				}
+			}
 			#slidearea{
 				width:1200px;
-				height:350px;
-				/*background:url('1.png') no-repeat;
-				background-size:1200px 350px;*/
+				height:550px;
+				background:url('1.png') no-repeat;
+				background-size:1200px 550px;
+				animation-name:slide;
+				animation-duration:10s;
+				animation-iteration-count:infinite;
 			}
 			#exparea{
 				width:1200px;
@@ -102,9 +140,35 @@
 				background:yellow;
 				background-image:url('expp.jpg');
 				background-size:5% 20px;
+			}	
+			.e{
+				width:260px;
+				height:260px;
+				background:yellow;
+				margin-top:20px;
+				float:left;
+				border-radius:50%;
+				box-shadow:3px 5px 10px 10px green;
 			}
-			h1,p{
-				margin:0;
+			.mar1{
+				background:red;
+				margin-left:150px;
+				margin-right:30px;
+			}
+			.mar1:hover{
+				background:green;
+				box-shadow:3px 5px 10px 10px yellow;
+			}
+			
+			.mar2{
+				background:yellow;
+				margin-left:30px;
+				margin-right:30px;
+			}
+			.mar3{
+				background:red;
+				margin-left:30px;
+				margin-right:45px;
 			}
 			#farea{
 				width:1200px;
@@ -175,7 +239,6 @@
 					opacity:1;
 				}
 				
-				
 				#b3{
 					width:200px;
 					height:200px;
@@ -191,7 +254,7 @@
 					overflow:hidden;
 					border:solid 4px white;
 					display:block;
-					
+					border-radius:50px;
 				}
 				.f_2:hover{
 					border:groove 2px transparent;
@@ -294,7 +357,7 @@
 					overflow:hidden;
 					border:solid 4px white;
 					display:block;
-					
+					border-radius:50px;
 				}
 				.d_2:hover{
 					border:groove 2px transparent;
@@ -379,7 +442,6 @@
 				}
 				#bx2 img:hover{
 					transform:scale(1.1,1.1);
-					
 					opacity:1;
 				}
 				
@@ -387,7 +449,6 @@
 				#bx3{
 					width:200px;
 					height:200px;
-					
 					float:left;			
 					border-radius:50%;
 				}
@@ -399,7 +460,7 @@
 					overflow:hidden;
 					border:solid 4px white;
 					display:block;
-					
+					border-radius:50px;
 				}
 				.g_2:hover{
 					border:groove 2px transparent;
@@ -472,7 +533,13 @@
 				background:green;
 					
 			}
+			
 				
+				@media print{
+					#titlearea,#menuarea,#logoarea{
+						display:none;
+					}
+				}	
 		</style>
 	</head>
 	<body>
@@ -480,8 +547,6 @@
 				<div id="titlearea">
 				</div>
 			
-			<div id="logoarea" >
-			<div id="black">
 				<div id="menuarea">
 					<ul style="font-weight:bold; ">
 						<li >
@@ -521,19 +586,25 @@
 						</li>
 					</ul>
 				</div>
+			<div id="logoarea" >
 				<div id="larea" class="center">
 					
 					<h1>JHARKHAND</br>PLACES</h1>
 					
 				</div>
 			</div>
-			</div>
+			
 			<div id="slidearea">
 			</div>
 			<div id="exparea">
-				<marquee direction="down" behavior="scroll" scrollamount="17" height="200px"	>
-					<h1  align="center" style="color:#11EB; font-size:100px;">EXPLORE  NOW</h1>
-				</marquee>
+				
+					<div class="e mar1">
+					</div>
+					<div class="e mar2">
+					</div>
+					<div class="e mar3">
+					</div>
+				
 			</div>
 		<div id="farea">
 		<div id="ggreen">
