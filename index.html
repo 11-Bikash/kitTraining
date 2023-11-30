@@ -136,29 +136,36 @@
 			}
 			#exparea{
 				width:1200px;
-				height:320px;
+				height:420px;
 				background:yellow;
 				background-image:url('expp.jpg');
 				background-size:5% 20px;
 			}	
 			.e{
 				width:260px;
-				height:310px;
+				height:340px;
 				float:left;
-				margin-top:5px;
-				background:white;
+				margin-top:35px;
+				background:#F3C9F7;
 				border:solid 1px #FFF;
 				border-radius:10%;
 				position:relative;
+				box-shadow:7px 7px 18px -2px rgba(255,18,18,0.75);
+			}
+			.e:hover{
+				transform:scale(1.1,1.1);
+				box-shadow:7px 7px 18px -2px rgba(0,255,0,0.7);
 			}
 			.mar1{
 				margin-left:150px;
 				margin-right:30px;
 				position:relative;
+				padding-top:10px;
 			}
 			.mar1 img{
-						padding-left:9px;
-						transition:transform 3s 0s linear;
+				padding-top:10px;
+				padding-left:20px;
+				transition:transform 2s 0s linear;
 			}
 			.mar1 img:hover{
 				transform:rotate(360deg);
@@ -166,43 +173,52 @@
 			}
 			
 			.mar2{
-
 				margin-left:50px;
 				margin-right:30px;
 				position:relative;
 			}
 			.mar2 img{
-						padding-left:9px;
+				padding-top:10px;
+				padding-left:20px;
 				border-radius:50%;
-						transition:transform 3s 0s linear;
+				transition:transform 2s 0s linear;
 			}
 			.mar2 img:hover{
 				transform:rotate(360deg);
 				transition:3s;
 			}
 			.mar3{
-						
-			
 				margin-left:50px;
 				margin-right:40px;
 				position:relative;
 			}
 			.mar3 img{
-						padding-left:9px;
-				transition:transform 3s 0s linear;
+				padding-top:10px;
+				padding-left:20px;
+				transition:transform 2s 0s linear;
 			}
 			.mar3 img:hover{
 				transform:rotate(360deg);
 				transition:3s;
 			}
 			.e1{
-				text-weight:900;
-				font-size:40px;
+				text-weight:bold;
 				position:absolute;
 				bottom:0;
 				width:100%;
-				text-align:center;
 				margin:10px;
+				font-family: "Baloo Bhaina", cursive;
+    				font-size: 35px;
+    				color: rgba(32, 38, 223, 0.84);
+				 text-shadow: rgb(0, 0, 0) 3px 3px 8px;
+				padding-bottom:20px;
+				padding-left:15px;
+				text-decoration:none;
+			}
+			.e1:hover{
+				  color: rgba(0, 318, 0);
+				 text-shadow: rgb(0, 0, 0) 3px 3px 8px;
+				transform:scale(1.2,1.2);
 			}
 			#farea{
 				width:1200px;
@@ -264,7 +280,6 @@
 				#b2 img{
 					transition-property:opacity;
 					tarnsition-duration:3s;
-					
 					opacity:0.8;
 				}
 				#b2 img:hover{
@@ -534,40 +549,75 @@
 				}
 			#footerarea{
 				width:1200px;
-				height:300px;
-				background:black;
+				height:410px;
+				background:url('footer.jpg') no-repeat ;
+				background-size:1200px 410px;
 			}
 				#f1{
 					width:300px;
-					height:300px;
-					background:orange;
+					height:410px;
 					float:left;
 				}
-				#f2{
-					width:300px;
-					height:300px;
-					background:;
-					float:left;
-				}
+					#f2{
+						width:300px;
+						height:410px;
+						float:left;
+					}
+					#f2 ul li{
+						padding-top:20px;
+						padding-left:20px;
+						color:yellow;
+						font-size:20px;
+						list-style:none;
+						font-weight:bold;
+						text-shadow: 3px 3px 2px rgba(158, 9, 173,0.9);
+						font-family: "Comic Sans MS", cursive, sans-serif;
+					}
+					#f2 ul li:hover{
+						color:#FFF;
+					}
+					#f21{
+						width:300px;
+						height:40px;
+					}
+					#f21 ul li{
+						letter-spacing: 3px;
+
+						color:red;
+						font-size:30px;
+						list-style:none;
+						font-weight:bold;
+						text-shadow: 3px 3px 2px #FFF;
+						font-family: Impact, Charcoal, sans-serif;
+					}
+					#f21 ul li:hover{
+						color:white;
+						text-shadow: 3px 3px 2px red;
+					}
 				#f3{
 					width:300px;
-					height:300px;
-					background:orange;
+					height:410px;
 					float:left;
 				}
 				#f4{
 					width:300px;
-					height:300px;
-					background:;
+					height:410px;
 					float:left;
 				}
 			#devarea{
 				width:1200px;
-				height:30px;
+				height:30px;	
 				background:green;
-					
 			}
-			
+			.dev1{
+					font-weight:bold;
+					text-align:center;	
+					font-size:18px;
+					width:100%;
+					padding-top:10px;
+					color:#FFF;
+					text-shadow:2px 2px 4px yellow;
+			}
 				
 				@media print{
 					#titlearea,#menuarea,#logoarea{
@@ -633,21 +683,21 @@
 			<div id="exparea">
 				
 					<div class="e mar1">
-						<img src="e.webp" width="240px" height="240px"/>	
+						<img src="e.webp" width="220px" height="220px"/>	
 						<div class="e1">
-							EXPLORE
+							<p style="padding-left:25px"><a href="bikash.html">EXPLORE</a></p>
 						</div>
 					</div>
 					<div class="e mar2">
-						<img src="hotel1.png" width="240px" height="240px"/>	
+						<img src="hotel1.png" width="220px" height="220px"/>	
 						<div class="e1">		
-							HOTEL
+							<p style="padding-left:50px"><a href="bikash.html">HOTEL</a></p>
 						</div>
 					</div>
 					<div class="e mar3">
-						<img src="res.webp" width="240px" height="240px"/>	
+						<img src="res.webp" width="220px" height="220px"/>	
 						<div class="e1">
-							RESTURANT
+							<a href="bikash.html">RESTURANT</a>
 						</div>
 					</div>
 				
@@ -784,13 +834,38 @@
 				<div id="f1">
 				</div>
 				<div id="f2">
+					<div id="f21">
+						<ul>
+							<li>
+								MENU Items
+							</li>
+						</ul>
+					</div>
+					<ul>
+						<li>
+							HOME
+						</li>
+						<li>
+							ABOUT
+						</li>
+						<li>
+							HOTEL
+						</li>
+						<li>
+							RESTURANT
+						</li>
+						<li>
+							CONTACT
+						</li>
+					</ul>
 				</div>
 				<div id="f3">
 				</div>
 				<div id="f4">
 				</div>
 			</div>
-			<div id="devarea">
+			<div id="devarea" class="dev1">
+				<p>DEVLOPED BY - BIKASH KUMAR SHARMA</p>
 			</div>
 			
 		</div>	
