@@ -3,15 +3,67 @@
 		<title></title>
 			<style type="text/css">
 			#mainarea{
-				width:100%;
-				height:220px;
+				width:1500px;
+				height:1700px;
 			}
-			#aboutarea{
-				width:100%;
-				height:450px;
-				background:url('jsr0.jpg') no-repeat;
+				#menuarea{
+					width:1470px;
+					height:45px;	
+					background:linear-gradient(to top,green,black);
+					position:sticky;
+					top:0;	
+					z-index:10000;
+
+				}
+						#menuarea ul{
+							list-style:none;
+							margin:0;
+							padding:0;
+							font-size:25px;
+						}
+						#menuarea ul li{
+							float:right;	
+						}
+						#menuarea ul li{
+							text-shadow:-2px -2px 5px yellow;
+						}
+						#menuarea ul li a:link, #menuarea ul li a:visited{
+							color:#FFF;
+							background:transparent;
+							text-decoration:none;
+						
+							padding:8px 25px;
+							display:block;
+							/*border-right:solid 1px black;*/
+						
+						}
+						#menuarea ul li:last-child a:link, #menuarea ul li:last-child a:visited{
+							border-right:none;
+						}
+						#menuarea ul li a:hover{
+							color:yellow;
+							background:green;
+						}
+						#menuarea ul li ul{
+							display:none;
+						}
+						#menuarea ul li:hover ul{
+							display:block;
+							position:absolute;
+							z-index:10;
+						}
+						#menuarea ul li:hover ul li{
+							float:none;
+						}
+						#menuarea ul li:hover ul li a:link,#menuarea ul li:hover ul li a:visited{
+							border:none;
+						}
+			#logoarea{
+				width:1450px;
+				height:430px;
+				background:url('jsr.jpg') no-repeat;
 				background-size:100% 450px ;
-				border:dotted 7px green;
+				border:double 10px green;
 			}
 			.j{
 				width:100px;
@@ -20,8 +72,7 @@
 				border-radius:10%;
 				box-shadow:5px 5px 5px yellow;
 				float:left;
-					
-					background:linear-gradient(to top,black,#0bc47f);
+				background:linear-gradient(to top,black,#0bc47f);
 			}
 			.j:hover{
 					transform:scale(1.1,1.1);
@@ -78,120 +129,91 @@
 					color:white;
 					text-shadow:5px 4px 6px #cd02f2;
 				}
-			#r1area{
-				width:100%;
-				height:220px;	
-				background:#9DE29B;
-			}
-				#r11{
-					width:19%;
-					height:215px;
-					background:url('jsr1.jpg') no-repeat;
-					background-size: 100% 215px;	
-					float:left;	
-					border:ridge 9px green;
-					border-radius:0px 80px;
-					border-image-width:0px 80px;
+				.parea{
+					width:1450px;
+					height:600px;
+					background:#FFF;
+					border-radius:5%;
+				}	
+				.p{
+					width:350px;
+					height:450px;
+					background:white;
+					margin-left:50px;
+					margin-right:50px;
+					margin-top:90px;
+					float:left;
+					border-radius:10%;
+					box-shadow:8px 8px 8px green;
+				}	
+				.p img{
+					width:350px;
+					height:225px;
+					background:yellow;
+					border-radius:10%;
 				}
-				#r12{
-					width:60%;
-					height:200px;
-					background:transparent;	
-					float:left;	
+				._p{
+					margin-top:120px;
 				}
-				#r13{
-					width:19%;
-					height:200px;
-					background:transparent;	
-					float:left;	
+				._p1{
 					
+					margin-bottom:0px;
 				}
-			#r2area{
-				width:100%;
-				height:220px;	
-				background:#96F365;
-			}
-				#r21{
-					width:19%;
-					height:200px;
-					background:red;
-					float:left;
+				.p1{
+					margin-left:100px;
 				}
-				#r22{
-					width:60%;
-					height:200px;
-					background:transparent;	
-					float:left;	
+				.text{
+					font-weight:bold;
+					text-align:justify;	
+					font-size:18px;
+					width:320px;
+					padding:20px;
 				}
-				#r23{
-					width:19%;
-					height:215px;
-					background:url('jsr2.jpg') no-repeat;
-					background-size: 100% 215px;	
-					float:left;	
-					border:ridge 9px green;
-					border-radius:0px 80px;
-					border-image-width:0px 80px;
-				}
-			#r3area{
-				width:100%;
-				height:220px;	
-				background:#58E380;
-			}
-				#r31{
-					width:19%;
-					height:215px;
-					background:url('jsr3.jpg') no-repeat;
-					background-size: 100% 215px;	
-					float:left;	
-					border:ridge 9px green;
-					border-radius:0px 80px;
-					border-image-width:0px 80px;
-				}
-				#r32{
-					width:60%;
-					height:200px;
-					background:transparent;	
-					float:left;	
-				}
-				#r33{
-					width:19%;
-					height:200px;
-					background:transparent;	
-					float:left;	
-				}
-			#r4area{
-				width:100%;
-				height:220px;	
-				background:#90E68D;
-			}
-				#r41{
-					width:19%;
-					height:200px;
-					background:red;
-					float:left;
-				}
-				#r42{
-					width:60%;
-					height:200px;
-					background:transparent;	
-					float:left;	
-				}
-				#r43{
-					width:19%;
-					height:215px;
-					background:url('jsr4.jpg') no-repeat;
-					background-size: 100% 215px;	
-					float:left;	
-					border:ridge 9px green;
-					border-radius:0px 80px;
-					border-image-width:0px 80px;
-				}
+				
 			</style>
 	</head>
 	<body>
 		<div id="mainarea">
-			<div id="aboutarea">
+				<div id="menuarea">
+					<ul style="font-weight:bold; ">
+						<li >
+							<a href="#" >CONTACT</a>
+						</li>
+						<li>
+							<a href="#">HOTELS</a>
+						</li>
+						<li>
+							<a href="#">ABOUT</a>
+						</li>
+						<li>
+							<a href="#">PLACES</a>
+							<ul>
+								<li>
+									<a href="#farea">JAMSHEDPUR</a>
+								</li>
+								<li>
+									<a href="#darea">RANCHI</a>
+								</li>
+								<li>
+									<a href="#">DEOGHAR</a>
+								</li>
+								<li>
+									<a href="#">DUMKA</a>
+								</li>
+								<li>
+									<a href="#">DHANBAD</a>
+								</li>
+								<li>
+									<a href="#">BOKARO</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">HOME</a>
+						</li>
+					</ul>
+				</div>
+			<div id="logoarea">
 			</div>
 				<div class="j j1 t">
 					J
@@ -223,234 +245,51 @@
 				<div class="j j10 t">
 					R
 				</div>
-			
-			<hr width="1px">
-			<div id="r1area">
-				<div id="r11">
-										
+			<div class="parea">
+				<div class="p p1 _p">
+					<img src="jsr1.jpg" width="350px" height="225px"/>
+					It lies near Dalma Wildlife Sanctuary and can be considered as one of the most important aquatic systems of the District as it serves as a water source for the Tata Steel Plant as well as for the city of Jamshedpur. The Dimna Lake is irregular in shape and spreads in approximately 1km2 area.
 				</div>
-				<div id="r12">
-					<h1 align="center" style="color:red">1.<u> DIMNA  LAKE</u></h1>
-					<p align="center">
-						<b><font size="3px">It lies near Dalma Wildlife Sanctuary and can be considered as one of the most important aquatic systems of the District as it serves as a water source for the Tata Steel Plant as well as for the city of Jamshedpur. The Dimna Lake is irregular in shape and spreads in approximately 1km2 area.</b>
-						</font></br><a href="https://maps.app.goo.gl/6KP1NrsgP5HXutzR9"><img src="exp_r1.png" width="200px" height="80px"/></a>
-					</p>
+				<div class=" p _p ">
+					<img src="jsr2.jpg" width="350px" height="225px"/>
+					Jubilee Park is an urban park located in Jamshedpur, Jharkhand, India. It is a popular destination for all those who wish to have an outdoor picnic, enjoy some outdoor activities and games or even just to have a relaxing day out with friends and family.
 				</div>
-				<div id="r13">
-					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29411.02711851599!2d86.26121919999999!3d22.862476400000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f60a02060f7f4d%3A0xef76b9652cfe115e!2sDimna%20Lake!5e0!3m2!1sen!2sin!4v1700307537450!5m2!1sen!2sin" width="100%" height="220px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+				<div class="p _p">
+					<img src="jsr3.jpg" width="350px" height="225px"/>
+					The JRD Tata Sports Complex Stadium, also known as The Furnace, is a 40,000-capacity (often limited to 24,424) stadium in Jamshedpur, India. It is currently used mostly for association football matches and athletics competitions. It has been the home stadium of Jamshedpur FC since the 2017–18 season. The stadium holds 24,424-40,000 spectators for sports matches (depending on the event).
 				</div>
-			</div><hr width="1px">
-			<div id="r2area">
-				<div id="r21">
-					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d234447.1555087755!2d85.15651031149748!3d23.343433819339744!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f4e104aa5db7dd%3A0xdc09d49d6899f43e!2sRanchi%2C%20Jharkhand!5e0!3m2!1sen!2sin!4v1700219125485!5m2!1sen!2sin" width="100%" height="220px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>					
+			</div>
+			<div class="parea ">
+				<div class="p p1 _p">
+					<img src="jsr4.jpg" width="350px" height="225px"/>
+					The Bhuvaneshwari Temple is popularly known as Telco Bhuvaneshwari Temple due to its location on Telco hill top. The Bhuvaneshwari Temple is dedicated to Goddess Bhuvaneshwari, who is also known goddess of the universe. The shrine was developed in 1978 by Swami Ranga Rajan Ji Maharaj
 				</div>
-				<div id="r22">
-					<p align="center"><b><font color="red"><u>2. Jubilee  Park</u></font></b></p>
-					<p align="center">
-						<b><font size="3px">Ranchi is the capital of the Indian state of Jharkhand. Ranchi was the centre of the Jharkhand movement, which called for a separate state for the tribal regions of South Bihar, northern Odisha, western West Bengal and the eastern area of what is present-day Chhattisgarh</b>
-						</font></br><a href="http://www.google.com"><img src="exp_r1.png" width="200px" height="80px"/></a>
-					</p>
+				<div class="p _p">
+					<img src="jsr6.jpg" width="350px" height="225px"/>
+					Tata Steel Zoological Park (TSZP) is situated in a corner of Jubilee Park, Jamshedpur.TSZP is a recognized 'Medium' category Zoo by the Central Zoo Authority (CZA). The CZA evaluates Zoos on periodic basis and stipulates conditions for their improvement. 
 				</div>
-				<div id="r23">
-					
+				<div class="p _p">
+					<img src="jsr5.jpg" width="350px" height="225px"/>
+					P&M Hi-Tech City Centre Mall[3] is located in the city of Jamshedpur, Jharkhand. It has a gross lease-able (retail) area of 600,000 sq ft (56,000 m2).[4] Film director Prakash Jha and R.K. Aggarwal are the builders of the mall.[5] It is located at Outer Circle Road, Bistupur. It is the second branch of P&M mall, Patna.
 				</div>
-			</div><hr width="1px">
-			<div id="r3area">
-				<div id="r31">
-										
+			</div>
+			<div class="parea _p1">
+				<div class="p p1 _p">
+					<img src="jsr7.jpeg" width="350px" height="225px"/>
+					Located on the outskirts of Jamshedpur city, Golpahari Temple is perched on a hilltop and is dedicated to Pahari Ma or Goddess of Mountains. Golpahari temple can be reached through a flight of 100 steps and offers a mesmerising view of the city below. Puja offerings like flowers, fruits etc are available at the base of the hillock.
 				</div>
-				<div id="r32">
-					<p align="center"><b><font color="red"><u>3. JRD TATA Sports Complex</u></font></b></p>
-					<p align="center">
-						<b><font size="3px">Deoghar is a holy city beside the Mayurakshi River, in the east Indian state of Jharkhand. The ancient Baba Baidyanath Temple complex is a significant Hindu pilgrimage site. Nearby, Shiv Ganga is a sacred pool where devotees of Shiva bathe. There is a shrine to Krishna in the ornate, stone-carved Naulakha Mandir temple. Northeast of town, Harila Jori is the site of a whitewashed Shiva temple and a sacred water tank.</b>
-						</font></br><a href="http://www.google.com"><img src="exp_r1.png" width="200px" height="80px"/></a>
-					</p>
+				<div class="p _p">
+					<img src="jsr8.jpg" width="350px" height="225px"/>
+					Chandil Dam standing on the Subarnarekha River is a place of scenic beauty. This dam is one of the most visited places of jharkhand. The museum located close to the Chandil dam has scripts written on rocks,which are 2000 years old.The multi-purpose chandil dam was built across the meeting place of both the rivers. 
 				</div>
-				<div id="r33">
-					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d116202.45760920669!2d86.61780434204455!3d24.474131254403588!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f116280f130f01%3A0xed8ba5a38d873e4b!2sDeoghar%2C%20Jharkhand!5e0!3m2!1sen!2sin!4v1700218730736!5m2!1sen!2sin" width="100%" height="220px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+				<div class="p _p">
+					<img src="jsr9.png" width="350px" height="225px"/>
+					<div class="text">
+						Located just outside of the Jubilee Park, the Russi Modi Centre for Excellence houses various professional organizations in Jamshedpur. The building was designed by Hafeez Contractor and is considered to be one of the most beautiful buildings in Jamshedpur.
+						
+					</div>
 				</div>
-			</div><hr width="1px">
-			<div id="r4area">
-				<div id="r41">
-					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d116384.92572552865!2d87.17444853462203!3d24.27572008505966!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f0b7b4985d6179%3A0x9c3a3b726f103305!2sDumka%2C%20Jharkhand!5e0!3m2!1sen!2sin!4v1700218961055!5m2!1sen!2sin" width="100%" height="220px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>					
-				</div>
-				<div id="r42">
-					<p align="center"><b><font color="red"><u>4. Bhuvaneshwari Temple</u></font></b></p>
-					<p align="center">
-						<b><font size="3px">Dumka, the headquarters of the Dumka district and Santhal Pargana region, is a city in the state of Jharkhand, India. It was made the headquarters of the Santhal Pargana region, which was carved out of the Bhagalpur and Birbhum district after the Santal Hool of 1855. </b>
-						</font></br><a href="http://www.google.com"><img src="exp_r1.png" width="200px" height="80px"/></a>
-					</p>
-				</div>
-				<div id="r43">
-					
-				</div>
-			</div><hr width="1px">
-			<div id="r4area">
-				<div id="r41">
-					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d116384.92572552865!2d87.17444853462203!3d24.27572008505966!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f0b7b4985d6179%3A0x9c3a3b726f103305!2sDumka%2C%20Jharkhand!5e0!3m2!1sen!2sin!4v1700218961055!5m2!1sen!2sin" width="100%" height="220px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>					
-				</div>
-				<div id="r42">
-					<p align="center"><b><font color="red"><u>4. Bhuvaneshwari Temple</u></font></b></p>
-					<p align="center">
-						<b><font size="3px">Dumka, the headquarters of the Dumka district and Santhal Pargana region, is a city in the state of Jharkhand, India. It was made the headquarters of the Santhal Pargana region, which was carved out of the Bhagalpur and Birbhum district after the Santal Hool of 1855. </b>
-						</font></br><a href="http://www.google.com"><img src="exp_r1.png" width="200px" height="80px"/></a>
-					</p>
-				</div>
-				<div id="r43">
-					
-				</div>
-			</div><hr width="1px">
-			<div id="r4area">
-				<div id="r41">
-					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d116384.92572552865!2d87.17444853462203!3d24.27572008505966!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f0b7b4985d6179%3A0x9c3a3b726f103305!2sDumka%2C%20Jharkhand!5e0!3m2!1sen!2sin!4v1700218961055!5m2!1sen!2sin" width="100%" height="220px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>					
-				</div>
-				<div id="r42">
-					<p align="center"><b><font color="red"><u>4. Bhuvaneshwari Temple</u></font></b></p>
-					<p align="center">
-						<b><font size="3px">Dumka, the headquarters of the Dumka district and Santhal Pargana region, is a city in the state of Jharkhand, India. It was made the headquarters of the Santhal Pargana region, which was carved out of the Bhagalpur and Birbhum district after the Santal Hool of 1855. </b>
-						</font></br><a href="http://www.google.com"><img src="exp_r1.png" width="200px" height="80px"/></a>
-					</p>
-				</div>
-				<div id="r43">
-					
-				</div>
-			</div><hr width="1px">
-			<div id="r4area">
-				<div id="r41">
-					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d116384.92572552865!2d87.17444853462203!3d24.27572008505966!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f0b7b4985d6179%3A0x9c3a3b726f103305!2sDumka%2C%20Jharkhand!5e0!3m2!1sen!2sin!4v1700218961055!5m2!1sen!2sin" width="100%" height="220px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>					
-				</div>
-				<div id="r42">
-					<p align="center"><b><font color="red"><u>4. Bhuvaneshwari Temple</u></font></b></p>
-					<p align="center">
-						<b><font size="3px">Dumka, the headquarters of the Dumka district and Santhal Pargana region, is a city in the state of Jharkhand, India. It was made the headquarters of the Santhal Pargana region, which was carved out of the Bhagalpur and Birbhum district after the Santal Hool of 1855. </b>
-						</font></br><a href="http://www.google.com"><img src="exp_r1.png" width="200px" height="80px"/></a>
-					</p>
-				</div>
-				<div id="r43">
-					
-				</div>
-			</div><hr width="1px">
-			<div id="r4area">
-				<div id="r41">
-					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d116384.92572552865!2d87.17444853462203!3d24.27572008505966!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f0b7b4985d6179%3A0x9c3a3b726f103305!2sDumka%2C%20Jharkhand!5e0!3m2!1sen!2sin!4v1700218961055!5m2!1sen!2sin" width="100%" height="220px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>					
-				</div>
-				<div id="r42">
-					<p align="center"><b><font color="red"><u>4. Bhuvaneshwari Temple</u></font></b></p>
-					<p align="center">
-						<b><font size="3px">Dumka, the headquarters of the Dumka district and Santhal Pargana region, is a city in the state of Jharkhand, India. It was made the headquarters of the Santhal Pargana region, which was carved out of the Bhagalpur and Birbhum district after the Santal Hool of 1855. </b>
-						</font></br><a href="http://www.google.com"><img src="exp_r1.png" width="200px" height="80px"/></a>
-					</p>
-				</div>
-				<div id="r43">
-					
-				</div>
-			</div><hr width="1px">
-			<div id="r4area">
-				<div id="r41">
-					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d116384.92572552865!2d87.17444853462203!3d24.27572008505966!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f0b7b4985d6179%3A0x9c3a3b726f103305!2sDumka%2C%20Jharkhand!5e0!3m2!1sen!2sin!4v1700218961055!5m2!1sen!2sin" width="100%" height="220px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>					
-				</div>
-				<div id="r42">
-					<p align="center"><b><font color="red"><u>4. Bhuvaneshwari Temple</u></font></b></p>
-					<p align="center">
-						<b><font size="3px">Dumka, the headquarters of the Dumka district and Santhal Pargana region, is a city in the state of Jharkhand, India. It was made the headquarters of the Santhal Pargana region, which was carved out of the Bhagalpur and Birbhum district after the Santal Hool of 1855. </b>
-						</font></br><a href="http://www.google.com"><img src="exp_r1.png" width="200px" height="80px"/></a>
-					</p>
-				</div>
-				<div id="r43">
-					
-				</div>
-			</div><hr width="1px">
-			<div id="r4area">
-				<div id="r41">
-					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d116384.92572552865!2d87.17444853462203!3d24.27572008505966!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f0b7b4985d6179%3A0x9c3a3b726f103305!2sDumka%2C%20Jharkhand!5e0!3m2!1sen!2sin!4v1700218961055!5m2!1sen!2sin" width="100%" height="220px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>					
-				</div>
-				<div id="r42">
-					<p align="center"><b><font color="red"><u>4. Bhuvaneshwari Temple</u></font></b></p>
-					<p align="center">
-						<b><font size="3px">Dumka, the headquarters of the Dumka district and Santhal Pargana region, is a city in the state of Jharkhand, India. It was made the headquarters of the Santhal Pargana region, which was carved out of the Bhagalpur and Birbhum district after the Santal Hool of 1855. </b>
-						</font></br><a href="http://www.google.com"><img src="exp_r1.png" width="200px" height="80px"/></a>
-					</p>
-				</div>
-				<div id="r43">
-					
-				</div>
-			</div><hr width="1px">
-			<div id="r4area">
-				<div id="r41">
-					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d116384.92572552865!2d87.17444853462203!3d24.27572008505966!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f0b7b4985d6179%3A0x9c3a3b726f103305!2sDumka%2C%20Jharkhand!5e0!3m2!1sen!2sin!4v1700218961055!5m2!1sen!2sin" width="100%" height="220px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>					
-				</div>
-				<div id="r42">
-					<p align="center"><b><font color="red"><u>4. Bhuvaneshwari Temple</u></font></b></p>
-					<p align="center">
-						<b><font size="3px">Dumka, the headquarters of the Dumka district and Santhal Pargana region, is a city in the state of Jharkhand, India. It was made the headquarters of the Santhal Pargana region, which was carved out of the Bhagalpur and Birbhum district after the Santal Hool of 1855. </b>
-						</font></br><a href="http://www.google.com"><img src="exp_r1.png" width="200px" height="80px"/></a>
-					</p>
-				</div>
-				<div id="r43">
-					
-				</div>
-			</div><hr width="1px">
-			<div id="r4area">
-				<div id="r41">
-					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d116384.92572552865!2d87.17444853462203!3d24.27572008505966!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f0b7b4985d6179%3A0x9c3a3b726f103305!2sDumka%2C%20Jharkhand!5e0!3m2!1sen!2sin!4v1700218961055!5m2!1sen!2sin" width="100%" height="220px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>					
-				</div>
-				<div id="r42">
-					<p align="center"><b><font color="red"><u>4. Bhuvaneshwari Temple</u></font></b></p>
-					<p align="center">
-						<b><font size="3px">Dumka, the headquarters of the Dumka district and Santhal Pargana region, is a city in the state of Jharkhand, India. It was made the headquarters of the Santhal Pargana region, which was carved out of the Bhagalpur and Birbhum district after the Santal Hool of 1855. </b>
-						</font></br><a href="http://www.google.com"><img src="exp_r1.png" width="200px" height="80px"/></a>
-					</p>
-				</div>
-				<div id="r43">
-					
-				</div>
-			</div><hr width="1px">
-			<div id="r4area">
-				<div id="r41">
-					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d116384.92572552865!2d87.17444853462203!3d24.27572008505966!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f0b7b4985d6179%3A0x9c3a3b726f103305!2sDumka%2C%20Jharkhand!5e0!3m2!1sen!2sin!4v1700218961055!5m2!1sen!2sin" width="100%" height="220px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>					
-				</div>
-				<div id="r42">
-					<p align="center"><b><font color="red"><u>4. Bhuvaneshwari Temple</u></font></b></p>
-					<p align="center">
-						<b><font size="3px">Dumka, the headquarters of the Dumka district and Santhal Pargana region, is a city in the state of Jharkhand, India. It was made the headquarters of the Santhal Pargana region, which was carved out of the Bhagalpur and Birbhum district after the Santal Hool of 1855. </b>
-						</font></br><a href="http://www.google.com"><img src="exp_r1.png" width="200px" height="80px"/></a>
-					</p>
-				</div>
-				<div id="r43">
-					
-				</div>
-			</div><hr width="1px">
-			<div id="r4area">
-				<div id="r41">
-					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d116384.92572552865!2d87.17444853462203!3d24.27572008505966!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f0b7b4985d6179%3A0x9c3a3b726f103305!2sDumka%2C%20Jharkhand!5e0!3m2!1sen!2sin!4v1700218961055!5m2!1sen!2sin" width="100%" height="220px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>					
-				</div>
-				<div id="r42">
-					<p align="center"><b><font color="red"><u>4. Bhuvaneshwari Temple</u></font></b></p>
-					<p align="center">
-						<b><font size="3px">Dumka, the headquarters of the Dumka district and Santhal Pargana region, is a city in the state of Jharkhand, India. It was made the headquarters of the Santhal Pargana region, which was carved out of the Bhagalpur and Birbhum district after the Santal Hool of 1855. </b>
-						</font></br><a href="http://www.google.com"><img src="exp_r1.png" width="200px" height="80px"/></a>
-					</p>
-				</div>
-				<div id="r43">
-					
-				</div>
-			</div><hr width="1px">
-			<div id="r4area">
-				<div id="r41">
-					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d116384.92572552865!2d87.17444853462203!3d24.27572008505966!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f0b7b4985d6179%3A0x9c3a3b726f103305!2sDumka%2C%20Jharkhand!5e0!3m2!1sen!2sin!4v1700218961055!5m2!1sen!2sin" width="100%" height="220px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>					
-				</div>
-				<div id="r42">
-					<p align="center"><b><font color="red"><u>4. Bhuvaneshwari Temple</u></font></b></p>
-					<p align="center">
-						<b><font size="3px">Dumka, the headquarters of the Dumka district and Santhal Pargana region, is a city in the state of Jharkhand, India. It was made the headquarters of the Santhal Pargana region, which was carved out of the Bhagalpur and Birbhum district after the Santal Hool of 1855. </b>
-						</font></br><a href="http://www.google.com"><img src="exp_r1.png" width="200px" height="80px"/></a>
-					</p>
-				</div>
-				<div id="r43">
-					
-				</div>
-			</div><hr width="1px">			
-
+			</div>
 		</div>
 	</body>
 </html>
