@@ -1,0 +1,621 @@
+body{
+				margin:0;
+			}
+			h1,p{
+				margin:0;
+			}
+			#mainarea{
+				width:1200px;
+				height:4000px
+				background:pink;
+				margin:0 auto;
+			}
+				#titlearea{
+					width:1200px;
+					height:20px;
+					background:green;
+				}
+				#menuarea{
+					width:1200px;
+					height:45px;	
+					background:linear-gradient(to top,green,black);
+					position:sticky;
+					top:0;	
+					z-index:10000;
+
+				}
+						#menuarea ul{
+							list-style:none;
+							margin:0;
+							padding:0;
+							font-size:25px;
+						}
+						#menuarea ul li{
+							float:right;	
+						}
+						#menuarea ul li{
+							text-shadow:-2px -2px 5px yellow;
+						}
+						#menuarea ul li a:link, #menuarea ul li a:visited{
+							color:#FFF;
+							background:transparent;
+							text-decoration:none;
+						
+							padding:8px 25px;
+							display:block;
+							/*border-right:solid 1px black;*/
+						
+						}
+						#menuarea ul li:last-child a:link, #menuarea ul li:last-child a:visited{
+							border-right:none;
+						}
+						#menuarea ul li a:hover{
+							color:yellow;
+							background:green;
+						}
+						#menuarea ul li ul{
+							display:none;
+						}
+						#menuarea ul li:hover ul{
+							display:block;
+							position:absolute;
+							z-index:10;
+						}
+						#menuarea ul li:hover ul li{
+							float:none;
+						}
+						#menuarea ul li:hover ul li a:link,#menuarea ul li:hover ul li a:visited{
+							border:none;
+						}
+			#logoarea{
+				width:1200px;
+				height:650px;
+				background:url('j1.jpg') no-repeat;
+				background-size:1200px 650px;
+			}
+				#larea{
+					width:1200px;
+					height:600px;
+				}
+				#larea h1{
+					text-shadow:5px 5px 3px yellow;
+					text-align:center;
+				}
+				#larea h1:hover{
+					text-shadow:-5px -5px 5px #FFC;
+				}
+				.center{
+					font-size:45px;
+					padding-top:350px;
+					color:green;
+				}
+			@keyframes slide{
+				0%{
+					transform:translate(0,0) no-repeat;
+					background:url('a.jpg');
+					background-size:1200px 550px;
+				}
+				20%{
+					transform:taransate(0,0) no-repeat;
+					background:url('b.jpg');
+					background-size:1200px 550px;
+				}
+				40%{
+					transform:transalte(0,0) no-repeat;
+					background:url('1.png');
+					background-size:1200px 550px;
+				}
+				60%{
+					tarnsform:translate(0,0) no-repeat;
+					background:url('bb.jpg');
+					background-size:1200px 550px;
+				}
+				80%{
+					transform:translate(0,0) no-repeat;
+					background:url('a.jpg');
+					background-size:1200px 550px;
+				}
+				100%{
+					transfrom:translate(0,0) no-repeat;
+					background:url('1.png');
+					background-size:1200px 550px;
+				}
+			}
+			#slidearea{
+				width:1200px;
+				height:550px;
+				background:url('1.png') no-repeat;
+				background-size:1200px 550px;
+				animation-name:slide;
+				animation-duration:10s;
+				animation-iteration-count:infinite;
+			}
+			#exparea{
+				width:1200px;
+				height:420px;
+				background:url('expp.jpg') fixed;
+				background-size:5% 20px;
+			}	
+			.e{
+				width:260px;
+				height:340px;
+				float:left;
+				margin-top:35px;
+				background:#F3C9F7;
+				border:solid 1px #FFF;
+				border-radius:10%;
+				position:relative;
+				box-shadow:7px 7px 18px -2px rgba(255,18,18,0.75);
+			}
+			.e:hover{
+				transform:scale(1.1,1.1);
+				box-shadow:7px 7px 18px -2px rgba(0,255,0,0.7);
+			}
+			.mar1{
+				margin-left:130px;
+				margin-right:30px;
+				position:relative;
+				padding-top:10px;
+			}
+			.mar1 img{
+				padding-top:10px;
+				padding-left:20px;
+				transition:transform 2s 0s linear;
+			}
+			.mar1 img:hover{
+				transform:rotate(360deg);
+				transition:3s;
+			}
+			
+			.mar2{
+				margin-left:50px;
+				margin-right:30px;
+				position:relative;
+			}
+			.mar2 img{
+				padding-top:10px;
+				padding-left:20px;
+				border-radius:50%;
+				transition:transform 2s 0s linear;
+			}
+			.mar2 img:hover{
+				transform:rotate(360deg);
+				transition:3s;
+			}
+			.mar3{
+				margin-left:50px;
+				margin-right:40px;
+				position:relative;
+			}
+			.mar3 img{
+				padding-top:10px;
+				padding-left:20px;
+				transition:transform 2s 0s linear;
+			}
+			.mar3 img:hover{
+				transform:rotate(360deg);
+				transition:3s;
+			}
+			.e1{
+				text-weight:bold;
+				position:absolute;
+				bottom:0;
+				width:100%;
+				margin:10px;
+				font-family: "Baloo Bhaina", cursive;
+    				font-size: 35px;
+    				color: rgba(32, 38, 223, 0.84);
+				 text-shadow: rgb(0, 0, 0) 3px 3px 8px;
+				padding-bottom:20px;
+				padding-left:15px;
+				text-decoration:none;
+			}
+			.e1:hover{
+				  color: rgba(0, 318, 0);
+				 text-shadow: rgb(0, 0, 0) 3px 3px 8px;
+				transform:scale(1.2,1.2);
+			}
+			#farea{
+				width:1200px;
+				height:500px;
+				background:url('t.gif') no-repeat ;
+				background-size:1200px 500px;
+			}
+
+			#ggreen{	
+				width:1200px;
+				height:500px;
+				background:rgba(0,150,0,0.2);
+			}
+				#f1area{
+					width:1000px;
+					height:400px;
+					padding:50px 100px;
+					background:transparent;
+				}
+				.f_1{
+					width:1000px;
+					height:200px;
+					background:transparent;
+				}
+				._bg{
+					background:transparent;
+				}
+				#b1{
+					width:198px; 
+					height:198px;
+					background:url('jsr.jpg') no-repeat ;	
+					background-size: 100% 200px;
+					float:left;
+					border:double 1px green;
+					overflow:hidden;
+					box-shadow:-1px -1px 10px 3px blue;
+				}
+				#b1:hover{
+					border:groove 1px #fff;
+					border-radius:40%;
+					transform:scale(1.1,1.1);
+					overflow:hidden;
+					box-shadow:-3px -3px 10px 7px #fff;
+				}
+				#b2{
+					width:600px;
+					height:200px;
+					background:rgba(100,200,200,0.7);
+					float:left;
+					border-radius:40px;
+					overflow:hidden;
+				}
+				#b2 h1{
+					text-shadow:-2px -2px 5px yellow;
+				}
+				#b2 h1:hover{
+					text-shadow:-5px -5px 15px white;
+				}
+				#b2 img{
+					transition-property:opacity;
+					tarnsition-duration:3s;
+					opacity:0.8;
+				}
+				#b2 img:hover{
+					transform:scale(1.1,1.1);
+					
+					opacity:1;
+				}
+				
+				#b3{
+					width:200px;
+					height:200px;
+					
+					float:left;			
+					border-radius:50%;
+				}
+				.f_2{
+					width:180px;
+					height:180px;
+					/*background:rgba(0,180,0,0.5);*/
+					float:left;
+					overflow:hidden;
+					border:solid 4px white;
+					display:block;
+					border-radius:50px;
+				}
+				.f_2:hover{
+					border:groove 2px transparent;
+					border-radius:50%;
+					transform:scale(1.1,1);
+					overflow:hidden;
+					box-shadow:-2px -3px 14px 4px #fff;
+					
+				}
+					.f_2 img{
+						width:100%;
+						height:100%;
+						opacity:0.8;	
+					}
+					.f_2 img:hover{
+						transform:scale(1.2,1.2);
+						opacity:1;
+					}
+
+			#darea{
+				width:1200px;
+				height:500px;
+				background:url('R.jpeg') no-repeat ;
+				background-size:1200px 500px;
+			}
+
+			#greenn{	
+				width:1200px;
+				height:500px;
+				background:rgba(0,150,0,0.3);
+			}
+				#d1area{
+					width:1000px;
+					height:400px;
+					padding:50px 100px;
+					background:transparent;
+				}
+				.d_1{
+					width:1000px;
+					height:200px;
+					background:transparent;
+				}
+				.bg{
+					background:transparent;
+				}
+				#box1{
+					width:198px; 
+					height:198px;
+					background:url('r1.jpg') no-repeat;
+					background-size: 100% 200px;
+					float:left;
+					border:double 1px green;
+					overflow:hidden;
+					box-shadow:-1px -1px 10px 3px blue;
+				}
+				#box1:hover{
+					border:groove 1px #fff;
+					border-radius:40%;
+					transform:scale(1.1,1.1);
+					overflow:hidden;
+					box-shadow:-3px -3px 10px 7px #fff;
+				}
+				#box2{
+					width:600px;
+					height:200px;
+					background:rgba(100,200,200,0.7);
+					float:left;
+					border-radius:40px;
+					overflow:hidden;
+				}
+				#box2 h1{
+					text-shadow:-2px -2px 5px yellow;
+				}
+				#box2 h1:hover{
+					text-shadow:-5px -5px 15px white;
+				}
+				#box2 img{
+					transition-property:opacity;
+					tarnsition-duration:3s;
+					
+					opacity:0.8;
+				}
+				#box2 img:hover{
+					transform:scale(1.1,1.1);
+					
+					opacity:1;
+				}
+				#box3{
+					width:200px;
+					height:200px;
+					
+					float:left;			
+					border-radius:50%;
+				}
+				.d_2{
+					width:180px;
+					height:180px;
+					/*background:rgba(0,180,0,0.5);*/
+					float:left;
+					overflow:hidden;
+					border:solid 4px white;
+					display:block;
+					border-radius:50px;
+				}
+				.d_2:hover{
+					border:groove 2px transparent;
+					border-radius:50%;
+					transform:scale(1.1,1);
+					overflow:hidden;
+					box-shadow:-2px -3px 14px 4px #fff;
+					
+				}
+					.d_2 img{
+						width:100%;
+						height:100%;
+						opacity:0.8;	
+					}
+					.d_2 img:hover{
+						transform:scale(1.2,1.2);
+						opacity:1;
+					}
+
+			#garea{
+				width:1200px;
+				height:500px;
+				background:url('dh.jpg') no-repeat;
+				background-size:1200px 500px;
+			}
+
+			#grreen{	
+				width:1200px;
+				height:500px;
+				background:rgba(0,150,0,0.3);
+			}
+				#g1area{
+					width:1000px;
+					height:400px;
+					padding:50px 100px;
+					background:transparent;
+				}
+				.g_1{
+					width:1000px;
+					height:200px;
+					background:transparent;
+				}
+				._bg1{
+					background:transparent;
+				}
+				#bx1{
+					width:198px; 
+					height:198px;
+					background:url('dh0.jpeg') no-repeat;
+					background-size: 100% 200px;
+					float:left;
+					border:double 1px green;
+					overflow:hidden;
+					box-shadow:-1px -1px 10px 3px blue;
+				}
+				#bx1:hover{
+					border:groove 1px #fff;
+					border-radius:40%;
+					transform:scale(1.1,1.1);
+					overflow:hidden;
+					box-shadow:-3px -3px 10px 7px #fff;
+				}
+				#bx2{
+					width:600px;
+					height:200px;
+					background:rgba(100,200,200,0.7);
+					float:left;
+					border-radius:40px;
+					overflow:hidden;
+				}
+				#bx2 h1{
+					text-shadow:-2px -2px 5px yellow;
+				}
+				#bx2 h1:hover{
+					text-shadow:-5px -5px 15px white;
+				}
+				#bx2 img{
+					transition-property:opacity;
+					tarnsition-duration:3s;
+					
+					opacity:0.8;
+				}
+				#bx2 img:hover{
+					transform:scale(1.1,1.1);
+					opacity:1;
+				}
+				
+				
+				#bx3{
+					width:200px;
+					height:200px;
+					float:left;			
+					border-radius:50%;
+				}
+				.g_2{
+					width:180px;
+					height:180px;
+					/*background:rgba(0,180,0,0.5);*/
+					float:left;
+					overflow:hidden;
+					border:solid 4px white;
+					display:block;
+					border-radius:50px;
+				}
+				.g_2:hover{
+					border:groove 2px transparent;
+					border-radius:50%;
+					transform:scale(1.1,1);
+					overflow:hidden;
+					box-shadow:-2px -3px 14px 4px #fff;
+					
+				}
+					.g_2 img{
+						width:100%;
+						height:100%;
+						opacity:0.8;	
+					}
+					.g_2 img:hover{
+						transform:scale(1.2,1.2);
+						opacity:1;
+					}
+			#aboutarea{
+				width:1200px;
+				height:400px;
+			}
+				#a1{
+					width:300px;
+					height:300px;
+					background:#4BB7F0  ;
+					float:left;
+					padding-top:100px;
+				}
+				#a2{
+					width:900px;
+					height:200px;
+					float:left;
+					background:url('a.jpg') no-repeat;
+					background-size:900px 400px;
+					padding-top:200px;
+				}
+			#footerarea{
+				width:1200px;
+				height:410px;
+				background:url('footer.jpg') no-repeat ;
+				background-size:1200px 410px;
+			}
+				#f1{
+					width:300px;
+					height:410px;
+					float:left;
+				}
+					#f2{
+						width:300px;
+						height:410px;
+						float:left;
+					}
+					#f2 ul li{
+						padding-top:20px;
+						padding-left:20px;
+						color:yellow;
+						font-size:20px;
+						list-style:none;
+						font-weight:bold;
+						text-shadow: 3px 3px 2px rgba(158, 9, 173,0.9);
+						font-family: "Comic Sans MS", cursive, sans-serif;
+					}
+					#f2 ul li:hover{
+						color:#FFF;
+					}
+					#f21{
+						width:300px;
+						height:40px;
+					}
+					#f21 ul li{
+						letter-spacing: 3px;
+
+						color:red;
+						font-size:30px;
+						list-style:none;
+						font-weight:bold;
+						text-shadow: 3px 3px 2px #FFF;
+						font-family: Impact, Charcoal, sans-serif;
+					}
+					#f21 ul li:hover{
+						color:white;
+						text-shadow: 3px 3px 2px red;
+					}
+				#f3{
+					width:300px;
+					height:410px;
+					float:left;
+				}
+				#f4{
+					width:300px;
+					height:410px;
+					float:left;
+				}
+			#devarea{
+				width:1200px;
+				height:30px;	
+				background:green;
+			}
+			.dev1{
+					font-weight:bold;
+					text-align:center;	
+					font-size:18px;
+					width:100%;
+					padding-top:10px;
+					color:#FFF;
+					text-shadow:2px 2px 4px yellow;
+			}
+				
+				@media print{
+					#titlearea,#menuarea,#logoarea{
+						display:none;
+					}
+				}
